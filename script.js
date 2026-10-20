@@ -583,11 +583,11 @@ document.getElementById("preencher-conclusao").addEventListener("click", () => {
 const botaoKahoot = document.getElementById("linkKahoot");
 
 if (linkDoKahoot.trim() !== "") {
-  botaoKahoot.href = linkDoKahoot;
+  botaoKahoot.href = https://kahoot.it/?pin=178372&refer_method=link;
 } else {
   botaoKahoot.addEventListener("click", (e) => {
     e.preventDefault();
-    alert("O link do Kahoot ainda será adicionado!");
+    alert("https://kahoot.it/?pin=178372&refer_method=link");
   });
 }
 

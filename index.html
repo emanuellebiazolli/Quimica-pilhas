@@ -7,660 +7,240 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <div class="app">
+  <aside class="menu">
+    <div class="marca">⚡ Pilha de<br>Moedas</div>
+    <p class="menu-sub">NOSSA AVENTURA CIENTÍFICA</p>
+    <nav id="menu-lista"></nav>
+    <div class="creditos-menu">Site criado por<br><strong>Emanuelle e Ana Luiza</strong></div>
+  </aside>
 
-  <div class="conteudo">
-
+  <main class="conteudo">
     <header class="topo">
-      <div class="logo">⚡ Pilha de Moedas</div>
-      <div class="trilho"><div id="barra"></div></div>
-      <span id="contador">1 / 14</span>
+      <div>
+        <span class="mini">PROJETO DE QUÍMICA</span>
+        <h2 id="titulo-atual">🏠 Início</h2>
+      </div>
+      <div class="progresso"><div id="barra"></div></div>
+      <span id="contador">1 / 13</span>
     </header>
 
-    <main class="paginas">
-
-      <!-- INÍCIO -->
-      <section class="pagina ativa" id="p-inicio" data-titulo="Início" data-icone="🏠" style="--cor:#e5484d">
-        <div class="heroi">
-          <div>
-            <span class="etiqueta">🔬 Projeto de Química · 5º ano</span>
-            <h1>A Pilha de <span class="destaque">Moedas</span></h1>
-            <p class="grande">Será que moedas, papel e um líquido da cozinha conseguem gerar <strong>eletricidade</strong> e acender uma luzinha?</p>
-            <button class="botao gde" data-ir-id="p-seguranca">Começar a missão →</button>
-            <p class="mini">Site criado por Emanuelle e Ana Luiza</p>
-          </div>
-          <div class="heroi-arte">
-            <div class="pilha-arte">
-              <div class="camada zinco"></div>
-              <div class="camada papel"></div>
-              <div class="camada cobre"></div>
-              <div class="camada zinco"></div>
-              <div class="camada papel"></div>
-              <div class="camada cobre"></div>
-              <div class="raio">⚡</div>
-            </div>
-          </div>
+    <section class="pagina ativa" id="p-inicio" data-titulo="Início" data-icone="🏠">
+      <div class="heroi">
+        <div>
+          <span class="etiqueta">🔬 Ciência para descobrir</span>
+          <h1>A incrível<br><span>Pilha de Moedas!</span></h1>
+          <p class="grande">Será que moedas, papel e um líquido podem produzir eletricidade? Vamos descobrir juntos, com explicações, animações e desafios!</p>
+          <button class="botao" data-ir="p-seguranca">Começar a aventura →</button>
+          <p class="mini">Um projeto feito com curiosidade, criatividade e química.</p>
         </div>
-
-        <h2>Nosso roteiro</h2>
-        <div class="grade tres">
-          <div class="cartao" style="--cor:#e8710a">
-            <div class="emoji-g">🦺</div>
-            <h3>1º Segurança</h3>
-            <p>Primeiro aprendemos as regras para fazer ciência sem se machucar.</p>
-          </div>
-          <div class="cartao" style="--cor:#7c4dff">
-            <div class="emoji-g">🔍</div>
-            <h3>2º Entender</h3>
-            <p>Descobrimos o que são elétrons, volts, circuito e por que a pilha funciona.</p>
-          </div>
-          <div class="cartao" style="--cor:#2f9e44">
-            <div class="emoji-g">🧪</div>
-            <h3>3º Experimentar</h3>
-            <p>Montamos a pilha, medimos os volts, comparamos os líquidos, concluímos e jogamos Kahoot!</p>
-          </div>
+        <div class="arte-pilha" aria-label="Ilustração de uma pilha de moedas">
+          <div class="raio-grande">⚡</div>
+          <div class="disco zinco"></div><div class="disco papel"></div>
+          <div class="disco cobre"></div><div class="disco zinco"></div>
+          <div class="disco papel"></div><div class="disco cobre"></div>
+          <div class="disco zinco"></div>
         </div>
-      </section>
+      </div>
+      <h2>Nosso roteiro de descobertas 🗺️</h2>
+      <div class="grade tres">
+        <article class="cartao cor-laranja"><div class="emoji">🦺</div><h3>1. Segurança</h3><p>Aprender a cuidar de nós e dos materiais.</p></article>
+        <article class="cartao cor-roxo"><div class="emoji">⚛️</div><h3>2. Entender</h3><p>Conhecer os elétrons, os metais e os volts.</p></article>
+        <article class="cartao cor-verde"><div class="emoji">💡</div><h3>3. Descobrir</h3><p>Explorar a pilha, comparar líquidos e entender a energia.</p></article>
+      </div>
+      <div class="destaque-box"><strong>💡 A grande pergunta:</strong> como uma reação química pode produzir energia elétrica?</div>
+    </section>
 
-      <!-- SEGURANÇA -->
-      <section class="pagina" id="p-seguranca" data-titulo="Segurança" data-icone="🦺" style="--cor:#e8710a">
-        <div class="cab"><span class="num"></span><h1>Ciência com segurança</h1></div>
-        <p class="grande">Antes de qualquer experimento, todo cientista aprende as regras. Clique em cada cartão depois de ler.</p>
+    <section class="pagina" id="p-seguranca" data-titulo="Segurança" data-icone="🦺">
+      <h1>🦺 Ciência com segurança</h1>
+      <p class="grande">Leia as regras e clique nos cartões para marcar cada uma como lida.</p>
+      <div class="grade tres" id="regras">
+        <button class="cartao regra"><span class="emoji">🧑‍🏫</span><h3>Com um adulto</h3><p>Faça atividades práticas com o professor ou responsável por perto.</p><span class="marcador">Marcar como lida</span></button>
+        <button class="cartao regra"><span class="emoji">🚫</span><h3>Nada na boca</h3><p>Não coloque moedas, arruelas ou materiais do experimento na boca.</p><span class="marcador">Marcar como lida</span></button>
+        <button class="cartao regra"><span class="emoji">👀</span><h3>Cuidado com os olhos</h3><p>Evite contato com vinagre e água salgada. Se houver contato, avise um adulto e lave com água.</p><span class="marcador">Marcar como lida</span></button>
+        <button class="cartao regra"><span class="emoji">🔌</span><h3>Sem tomadas</h3><p>Nunca ligue a pilha de moedas a uma tomada ou a aparelhos elétricos domésticos.</p><span class="marcador">Marcar como lida</span></button>
+        <button class="cartao regra"><span class="emoji">🧻</span><h3>Mesa organizada</h3><p>Limpe os líquidos derramados e mantenha a mesa seca e organizada.</p><span class="marcador">Marcar como lida</span></button>
+        <button class="cartao regra"><span class="emoji">🧼</span><h3>Lave as mãos</h3><p>Depois da atividade, lave as mãos e guarde os materiais corretamente.</p><span class="marcador">Marcar como lida</span></button>
+      </div>
+      <div class="destaque-box" id="msg-regras">Você leu 0 de 6 regras.</div>
+    </section>
 
-        <div class="grade tres">
-          <button class="regra"><i class="ok">✔ Lido!</i><span class="re">🧑‍🏫</span><strong>Só com um adulto</strong><span>O experimento é feito com o professor ou um responsável por perto.</span></button>
-          <button class="regra"><i class="ok">✔ Lido!</i><span class="re">🚫</span><strong>Nada na boca</strong><span>Moedas, arruelas, LED, vinagre e água com sal nunca vão à boca.</span></button>
-          <button class="regra"><i class="ok">✔ Lido!</i><span class="re">👀</span><strong>Cuidado com os olhos</strong><span>Se o vinagre ou a água com sal cair no olho, lave com água e avise um adulto na hora.</span></button>
-          <button class="regra"><i class="ok">✔ Lido!</i><span class="re">🔌</span><strong>Tomada é perigosa</strong><span>Nunca ligue a pilha de moedas na tomada. Nunca abra, fure ou esquente pilhas de verdade.</span></button>
-          <button class="regra"><i class="ok">✔ Lido!</i><span class="re">🧻</span><strong>Mesa limpa e seca</strong><span>Limpe o líquido que cair. Papel molhado demais também faz a pilha parar de funcionar.</span></button>
-          <button class="regra"><i class="ok">✔ Lido!</i><span class="re">🧼</span><strong>Lave as mãos</strong><span>No final do experimento, lave bem as mãos e guarde todos os materiais.</span></button>
+    <section class="pagina" id="p-palavras" data-titulo="Palavras da ciência" data-icone="🔍">
+      <h1>🔍 Palavras da ciência</h1>
+      <p class="grande">Toque nos cartões para virar e aprender uma palavra nova.</p>
+      <div class="grade quatro">
+        <button class="carta"><span class="frente"><span class="emoji">⚛️</span><strong>Átomo</strong><small>Clique para descobrir</small></span><span class="verso">Um pedacinho minúsculo que forma tudo ao nosso redor, como os metais e a água.</span></button>
+        <button class="carta"><span class="frente"><span class="emoji">🔵</span><strong>Elétron</strong><small>Clique para descobrir</small></span><span class="verso">Uma partícula muito pequena com carga negativa. O movimento de elétrons participa da corrente elétrica.</span></button>
+        <button class="carta"><span class="frente"><span class="emoji">🧩</span><strong>Íon</strong><small>Clique para descobrir</small></span><span class="verso">Um átomo ou grupo de átomos com carga elétrica. Íons podem se mover pelo líquido da pilha.</span></button>
+        <button class="carta"><span class="frente"><span class="emoji">🌊</span><strong>Corrente elétrica</strong><small>Clique para descobrir</small></span><span class="verso">O fluxo organizado de cargas elétricas por um caminho, como um fio.</span></button>
+        <button class="carta"><span class="frente"><span class="emoji">🔁</span><strong>Circuito</strong><small>Clique para descobrir</small></span><span class="verso">Um caminho por onde a corrente pode passar. Para funcionar, precisa estar fechado.</span></button>
+        <button class="carta"><span class="frente"><span class="emoji">🍫</span><strong>Energia química</strong><small>Clique para descobrir</small></span><span class="verso">Energia relacionada às substâncias e às suas reações. Uma pilha pode transformá-la em energia elétrica.</span></button>
+        <button class="carta"><span class="frente"><span class="emoji">💧</span><strong>Eletrólito</strong><small>Clique para descobrir</small></span><span class="verso">Material com íons móveis que ajuda a transportar cargas dentro da pilha. Pode ser um líquido, como vinagre ou água salgada.</span></button>
+        <button class="carta"><span class="frente"><span class="emoji">⚖️</span><strong>Oxidação e redução</strong><small>Clique para descobrir</small></span><span class="verso">Oxidação é perder elétrons; redução é ganhar elétrons. Esses processos estão relacionados nas reações da pilha.</span></button>
+      </div>
+    </section>
+
+    <section class="pagina" id="p-volt" data-titulo="O que é volt?" data-icone="⚡">
+      <h1>⚡ Afinal, o que é volt?</h1>
+      <div class="grade dois">
+        <article class="cartao cor-azul"><div class="emoji">🧑‍🔬</div><h2>Alessandro Volta</h2><p>Foi um cientista italiano que viveu entre 1745 e 1827. Em 1800, apresentou uma pilha elétrica feita com discos de metais diferentes e material umedecido.</p></article>
+        <article class="cartao cor-roxo"><div class="emoji">🏷️</div><h2>Uma homenagem</h2><p>A unidade de tensão elétrica recebeu o nome de <strong>volt</strong>, em homenagem a Alessandro Volta. Seu símbolo é a letra <strong>V</strong>.</p></article>
+      </div>
+      <div class="cartao">
+        <h2>💧 Imagine a água empurrada por um cano</h2>
+        <p>A tensão elétrica pode ser comparada à diferença de pressão que ajuda a empurrar a água. A corrente elétrica é o fluxo de cargas que passa pelo circuito.</p>
+        <label class="rotulo" for="slider-agua">Mude o número de células da simulação: <strong id="n-agua">1</strong></label>
+        <input id="slider-agua" type="range" min="1" max="6" value="1">
+        <div class="medidor-agua">
+          <div class="tanque"><div id="nivel"></div></div>
+          <div class="cano" aria-label="Bolinhas de energia em movimento">➜ ➜ ➜</div>
+          <div class="display" id="volt-agua">0,8 V</div>
         </div>
+        <p id="txt-agua" class="destaque-box">Simulação educativa: uma célula de exemplo.</p>
+      </div>
+    </section>
 
-        <div class="caixa" id="msg-regras">Você leu 0 de 6 regras.</div>
-        <button class="botao" data-ir-id="p-palavras">Próximo: palavras da ciência →</button>
-      </section>
+    <section class="pagina" id="p-materiais" data-titulo="Materiais" data-icone="🧰">
+      <h1>🧰 Materiais que aparecem no projeto</h1>
+      <p class="grande">Marque os itens conforme forem separados pelo professor ou responsável.</p>
+      <div class="grade tres" id="lista-materiais">
+        <button class="cartao material"><span class="emoji">🪙</span><h3>Moedas de 5 centavos</h3><p>Moedas de tom avermelhado, com revestimento de cobre.</p></button>
+        <button class="cartao material"><span class="emoji">🔘</span><h3>Arruelas galvanizadas</h3><p>Arruelas com revestimento de zinco.</p></button>
+        <button class="cartao material"><span class="emoji">📄</span><h3>Papelão ou feltro</h3><p>Discos que serão umedecidos e separados entre os metais.</p></button>
+        <button class="cartao material"><span class="emoji">🍶</span><h3>Vinagre</h3><p>Um dos líquidos que será comparado.</p></button>
+        <button class="cartao material"><span class="emoji">🧂</span><h3>Água com sal</h3><p>Água com sal de cozinha dissolvido, em recipiente separado.</p></button>
+        <button class="cartao material"><span class="emoji">💡</span><h3>LED</h3><p>Uma luzinha que pode acender se as condições elétricas forem suficientes.</p></button>
+        <button class="cartao material"><span class="emoji">🧻</span><h3>Papel toalha</h3><p>Para retirar o excesso de líquido.</p></button>
+        <button class="cartao material"><span class="emoji">📟</span><h3>Multímetro</h3><p>Se disponível e utilizado por um adulto, pode medir a tensão.</p></button>
+        <button class="cartao material"><span class="emoji">✏️</span><h3>Caderno</h3><p>Para registrar observações durante a atividade escolar.</p></button>
+      </div>
+      <div class="destaque-box" id="msg-materiais">Itens separados: 0 de 9.</div>
+    </section>
 
-      <!-- PALAVRAS DA CIÊNCIA -->
-      <section class="pagina" id="p-palavras" data-titulo="Palavras da ciência" data-icone="🔍" style="--cor:#7c4dff">
-        <div class="cab"><span class="num"></span><h1>Palavras da ciência</h1></div>
-        <p class="grande">Clique em cada cartão para virar e descobrir o que a palavra quer dizer.</p>
-
-        <div class="grade quatro">
-
-          <div class="carta" tabindex="0" style="--cor:#e5484d">
-            <div class="frente"><div class="emoji-g">⚛️</div><h3>Átomo</h3></div>
-            <div class="verso"><p>Tudo é feito de pedacinhos minúsculos chamados <strong>átomos</strong>, como peças de LEGO invisíveis. A moeda, o papel e você são feitos deles.</p></div>
-          </div>
-
-          <div class="carta" tabindex="0" style="--cor:#1971c2">
-            <div class="frente"><div class="emoji-g">🔵</div><h3>Elétron</h3></div>
-            <div class="verso"><p>É uma partícula muito pequena que anda em volta do centro do átomo. Tem carga <strong>negativa (−)</strong>. Quando muitos elétrons andam juntos, temos eletricidade!</p></div>
-          </div>
-
-          <div class="carta" tabindex="0" style="--cor:#7c4dff">
-            <div class="frente"><div class="emoji-g">🧩</div><h3>Íon</h3></div>
-            <div class="verso"><p>É um átomo que <strong>ganhou ou perdeu elétrons</strong> e ficou com carga. Como emprestar figurinhas: quem emprestou ficou com menos, quem recebeu ficou com mais.</p></div>
-          </div>
-
-          <div class="carta" tabindex="0" style="--cor:#0891b2">
-            <div class="frente"><div class="emoji-g">🌊</div><h3>Corrente elétrica</h3></div>
-            <div class="verso"><p>É o <strong>movimento dos elétrons</strong> em fila pelo fio, como a água correndo dentro de um cano.</p></div>
-          </div>
-
-          <div class="carta" tabindex="0" style="--cor:#2f9e44">
-            <div class="frente"><div class="emoji-g">🔁</div><h3>Circuito</h3></div>
-            <div class="verso"><p>É um <strong>caminho fechado</strong>, como uma pista de corrida em volta. Se a pista tiver um buraco, ninguém passa e a luz não acende.</p></div>
-          </div>
-
-          <div class="carta" tabindex="0" style="--cor:#e8710a">
-            <div class="frente"><div class="emoji-g">🍫</div><h3>Energia química</h3></div>
-            <div class="verso"><p>É a energia guardada nas substâncias, como a do lanche que te dá força no recreio. Na pilha, ela vira <strong>energia elétrica</strong>.</p></div>
-          </div>
-
-          <div class="carta" tabindex="0" style="--cor:#d6336c">
-            <div class="frente"><div class="emoji-g">💧</div><h3>Eletrólito</h3></div>
-            <div class="verso"><p>É o líquido cheio de íons que deixa a eletricidade andar por dentro da pilha. No nosso caso: <strong>vinagre ou água com sal</strong>.</p></div>
-          </div>
-
-          <div class="carta" tabindex="0" style="--cor:#9c36b5">
-            <div class="frente"><div class="emoji-g">⚖️</div><h3>Oxidar e reduzir</h3></div>
-            <div class="verso"><p><strong>Oxidar</strong> é perder elétrons. <strong>Reduzir</strong> é ganhar elétrons. Quem perde, oxida; quem ganha, reduz. Os dois acontecem juntos!</p></div>
-          </div>
-
+    <section class="pagina" id="p-liquidos" data-titulo="Vinagre × água com sal" data-icone="💧">
+      <h1>💧 Vinagre × água com sal</h1>
+      <p class="grande">Os dois líquidos podem ajudar no transporte de íons, mas são substâncias diferentes.</p>
+      <div class="grade dois">
+        <article class="cartao cor-laranja liquido-card">
+          <div class="emoji">🍶</div>
+          <h2>Vinagre</h2>
+          <p>É composto principalmente por água e contém ácido acético. É um líquido ácido, e sua composição pode favorecer algumas reações eletroquímicas.</p>
+          <p><strong>Importante:</strong> o resultado depende dos metais, da concentração, da montagem e do contato entre as peças.</p>
+        </article>
+        <article class="cartao cor-azul liquido-card">
+          <div class="emoji">🧂</div>
+          <h2>Água com sal</h2>
+          <p>Quando o sal se dissolve, aparecem íons de sódio e cloreto que podem transportar carga no líquido.</p>
+          <p><strong>Importante:</strong> mais sal não significa automaticamente uma tensão maior ou um LED mais brilhante.</p>
+        </article>
+      </div>
+      <div class="destaque-box"><strong>🔬 Comparação justa:</strong> em uma atividade supervisionada, mantenha iguais os metais, o número de camadas e a quantidade de líquido. A única coisa que deve mudar é o líquido testado.</div>
+      <div class="comparacao-final">
+        <div class="comparacao-icone">🧪</div>
+        <h2>Dois líquidos, uma investigação!</h2>
+        <p>Observe o que acontece em cada montagem e compare os resultados medidos. A ciência depende de observações e testes, não apenas de palpites.</p>
+        <div class="etiquetas-liquidos">
+          <span class="etiqueta-liquido etiqueta-vinagre">🍶 Vinagre</span>
+          <span class="etiqueta-liquido etiqueta-sal">🧂 Água com sal</span>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- VOLT -->
-      <section class="pagina" id="p-volt" data-titulo="O que é volt?" data-icone="⚡" style="--cor:#1971c2">
-        <div class="cab"><span class="num"></span><h1>O que é “volt”?</h1></div>
-
-        <div class="grade dois">
-          <div class="cartao">
-            <div class="emoji-g">🧑‍🔬</div>
-            <h3>Alessandro Volta</h3>
-            <p>Cientista italiano que viveu de 1745 a 1827. Em <strong>1800</strong> ele inventou a primeira pilha: discos de dois metais diferentes separados por um material molhado.</p>
-          </div>
-          <div class="cartao">
-            <div class="emoji-g">🏷️</div>
-            <h3>Por que se chama “volt”?</h3>
-            <p>Para homenagear o inventor, os cientistas deram o <strong>nome dele</strong> à medida do “empurrão” que a pilha dá nos elétrons. Esse empurrão se chama <strong>tensão elétrica</strong> e é medido em <strong>volts</strong> (símbolo <strong>V</strong>). Quanto mais volts, maior o empurrão!</p>
-          </div>
-        </div>
-
+    <section class="pagina" id="p-montagem" data-titulo="Como as camadas funcionam" data-icone="🧩">
+      <h1>🧩 Veja as camadas da pilha</h1>
+      <p class="grande">A ilustração mostra como os materiais podem ficar organizados: metal, separador umedecido e outro metal.</p>
+      <div class="grade dois">
         <div class="cartao">
-          <h3>💧 Imagine uma caixa d'água</h3>
-          <p>Quanto mais alta a caixa, mais forte a água é empurrada pelo cano. A pilha é parecida: os <strong>volts</strong> são a força do empurrão, e a <strong>corrente</strong> é a quantidade de água (elétrons) que passa.</p>
-
-          <div class="agua-cena">
-            <div class="tanque"><div class="nivel" id="nivel"></div></div>
-            <div class="cano" id="cano">
-              <span class="gota"></span><span class="gota"></span><span class="gota"></span><span class="gota"></span>
-            </div>
-            <div class="agua-info">
-              <div class="display" id="volt-agua">0,8 V</div>
-            </div>
+          <div class="pilha-corte" id="montagem-pilha">
+            <div class="camada zinco">Zinco</div><div class="camada papel">Papel umedecido</div><div class="camada cobre">Cobre</div>
+            <div class="camada zinco">Zinco</div><div class="camada papel">Papel umedecido</div><div class="camada cobre">Cobre</div>
           </div>
-          <p id="txt-agua" class="destaque-txt"></p>
-          <label class="slider-rotulo">Células empilhadas: <strong id="n-agua">1</strong>
-            <input type="range" id="slider-agua" min="1" max="6" value="1">
-          </label>
+          <div class="controles"><button class="botao" id="mais-camada">＋ Mostrar camada</button><button class="botao secundario" id="menos-camada">− Remover camada</button></div>
+          <p id="msg-montagem" class="destaque-box">A pilha ilustrada tem 2 células.</p>
         </div>
-      </section>
+        <article class="cartao"><h2>🔎 O que observar?</h2><ul><li>Metais diferentes participam das reações.</li><li>O separador umedecido permite o movimento de íons e evita o contato direto entre os metais.</li><li>As camadas precisam fazer bom contato.</li><li>Uma pilha real pode apresentar resultados diferentes da ilustração.</li></ul></article>
+      </div>
+    </section>
 
-      <!-- MATERIAIS -->
-      <section class="pagina" id="p-materiais" data-titulo="Materiais" data-icone="🧰" style="--cor:#0f9d8a">
-        <div class="cab"><span class="num"></span><h1>Nossos materiais</h1></div>
-        <p class="grande">Clique em cada material quando ele estiver separado na mesa.</p>
+    <section class="pagina" id="p-circuito" data-titulo="Caminho dos elétrons" data-icone="🔌">
+      <h1>🔌 O caminho da eletricidade</h1>
+      <p class="grande">Use os botões para acompanhar uma explicação visual simplificada.</p>
+      <div class="circuito">
+        <div class="placa zn">Metal com zinco</div>
+        <div class="fio"><span id="eletrons">e⁻　 e⁻　 e⁻　 e⁻</span></div>
+        <div class="lampada" id="lampada">💡</div>
+        <div class="placa cu">Moeda revestida de cobre</div>
+        <div class="liquido-cena">💧 Íons se movimentam no líquido</div>
+      </div>
+      <div class="controles central"><button class="botao secundario" id="passo-ant">◀ Anterior</button><strong id="passo-num">Passo 1 de 4</strong><button class="botao" id="passo-prox">Próximo ▶</button></div>
+      <div class="destaque-box"><h3 id="leg-titulo">1. A reação começa</h3><p id="leg-texto">Uma reação química em um dos metais pode liberar elétrons.</p></div>
+      <details class="formulas"><summary>🧠 Para conhecer as fórmulas químicas</summary><p><strong>Oxidação do zinco:</strong> Zn → Zn²⁺ + 2e⁻</p><p>Isso significa que o zinco pode liberar elétrons e formar íons com carga positiva.</p><p><strong>Redução:</strong> uma substância do outro lado recebe elétrons. A reação exata depende do líquido e das condições.</p><p class="mini">A ilustração é educativa e simplificada; não representa todas as reações possíveis.</p></details>
+    </section>
 
-        <div class="grade tres">
-          <button class="mat"><span class="me">🪙</span><span><strong>Moedas de 5 centavos</strong><span class="tag">fazem o papel do COBRE</span>A moeda tem revestimento de cobre.</span></button>
-          <button class="mat"><span class="me">🔘</span><span><strong>Arruelas galvanizadas</strong><span class="tag">fazem o papel do ZINCO</span>Têm uma camada de zinco por fora.</span></button>
-          <button class="mat"><span class="me">📄</span><span><strong>Discos de papelão</strong><span class="tag">seguram o líquido</span>Cortados um pouco menores que a moeda.</span></button>
-          <button class="mat"><span class="me">🍶</span><span><strong>Vinagre</strong><span class="tag">eletrólito nº 1</span>Em um potinho só para ele.</span></button>
-          <button class="mat"><span class="me">🧂</span><span><strong>Água com sal</strong><span class="tag">eletrólito nº 2</span>Sal de cozinha dissolvido na água, em outro potinho.</span></button>
-          <button class="mat"><span class="me">💡</span><span><strong>LED</strong><span class="tag">a luzinha</span>Perna comprida (+) e perna curta (−).</span></button>
-          <button class="mat"><span class="me">🧻</span><span><strong>Papel toalha</strong><span class="tag">para secar</span>Tira o excesso de líquido dos discos.</span></button>
-          <button class="mat"><span class="me">📏</span><span><strong>Multímetro</strong><span class="tag">mede os volts</span>Se a escola tiver, vamos usar!</span></button>
-          <button class="mat"><span class="me">✏️</span><span><strong>Caderno e lápis</strong><span class="tag">para anotar</span>Cientista sempre registra o que mede.</span></button>
-        </div>
+    <section class="pagina" id="p-voltimetro" data-titulo="Voltímetro e LED" data-icone="💡">
+      <h1>💡 Voltímetro e LED</h1>
+      <p class="grande">Nesta área, os valores são <strong>simulados para fins educativos</strong>. Não são medições de uma pilha real.</p>
+      <div class="grade dois">
+        <div class="cartao central"><h2>🔋 Células simuladas</h2><div class="pilha-mini" id="lab-pilha"><span></span></div><div class="controles"><button class="botao" id="mais">＋ Célula</button><button class="botao secundario" id="menos">− Célula</button></div><p id="msg-lab">1 célula simulada.</p></div>
+        <div class="cartao central"><h2>📟 Voltímetro virtual</h2><div class="display" id="voltagem">0,8 V</div><div class="led" id="led"></div><p id="msg-led">O LED está apagado nesta simulação.</p></div>
+      </div>
+      <div class="destaque-box">Cada célula pode contribuir para a tensão total quando ligada em série. O brilho de um LED real também depende da corrente, da cor do LED e da montagem. Não use esta simulação como medida de segurança ou previsão de resultado real.</div>
+    </section>
 
-        <div class="caixa" id="msg-materiais">Separados: 0 de 9.</div>
-        <p class="mini">Dica: se a arruela não for galvanizada, ela não tem zinco e a pilha não funciona direito.</p>
-      </section>
+    <section class="pagina" id="p-dia" data-titulo="No dia a dia" data-icone="🏘️">
+      <h1>🏘️ Volts no dia a dia</h1>
+      <p class="grande">Escolha um item para saber sua tensão nominal aproximada. Os valores variam conforme o modelo e a carga.</p>
+      <div class="grade tres" id="escada">
+        <button class="cartao item-volt" data-nome="Pilha AA" data-valor="1,5 V" data-desc="Uma pilha alcalina AA comum tem tensão nominal de cerca de 1,5 volt."><span class="emoji">🔋</span><h3>Pilha AA</h3><strong>1,5 V</strong></button>
+        <button class="cartao item-volt" data-nome="Bateria recarregável" data-valor="1,2 V" data-desc="Muitas pilhas recarregáveis NiMH têm tensão nominal de aproximadamente 1,2 volt."><span class="emoji">♻️</span><h3>Recarregável</h3><strong>1,2 V</strong></button>
+        <button class="cartao item-volt" data-nome="Bateria de carro" data-valor="12 V" data-desc="A bateria comum de um carro a combustão é nominalmente de 12 volts."><span class="emoji">🚗</span><h3>Bateria de carro</h3><strong>12 V</strong></button>
+      </div>
+      <div class="destaque-box" id="detalhe-volts">Clique em um item para ver mais informações.</div>
+      <article class="cartao cor-verde"><h2>♻️ Descarte responsável</h2><p>Pilhas e baterias usadas devem ser levadas a pontos de coleta apropriados. Não as abra, queime ou jogue em rios, terrenos ou no lixo comum.</p></article>
+    </section>
 
-      <!-- LÍQUIDOS -->
-      <section class="pagina" id="p-liquidos" data-titulo="Vinagre × água com sal" data-icone="💧" style="--cor:#0891b2">
-        <div class="cab"><span class="num"></span><h1>Vinagre × água com sal</h1></div>
-        <p class="grande">Vamos fazer a pilha duas vezes, uma com cada líquido, e comparar. Mas o que cada um faz?</p>
+    <section class="pagina" id="p-conclusao" data-titulo="Conclusão" data-icone="🏁">
+      <h1>🏁 Nossa conclusão</h1>
+      <div class="cartao"><h2>O que aprendemos?</h2><ul class="resumo"><li>Uma pilha transforma energia química em energia elétrica.</li><li>Metais diferentes podem participar de reações que movimentam elétrons.</li><li>O líquido com íons ajuda a transportar cargas dentro da pilha.</li><li>A tensão elétrica é medida em volts.</li><li>Um circuito precisa estar fechado para a corrente circular pelo caminho externo.</li></ul></div>
+      <div class="grade dois">
+        <article class="cartao cor-laranja"><h2>🍶 Vinagre</h2><p>É ácido e pode favorecer certas reações. Seu desempenho depende dos metais, da montagem e da concentração.</p></article>
+        <article class="cartao cor-azul"><h2>🧂 Água com sal</h2><p>Contém íons móveis, mas não há garantia de que produza uma tensão maior. É preciso medir e comparar de forma justa.</p></article>
+      </div>
+      <div class="destaque-box"><h2>🔬 Conclusão científica</h2><p>Não devemos escolher um vencedor sem medir as duas montagens nas mesmas condições. O resultado observado é que permite responder qual líquido funcionou melhor naquela atividade.</p></div>
+      <button class="botao" data-ir="p-kahoot">Ir para o Kahoot →</button>
+    </section>
 
-        <div class="grade dois">
-          <div class="cartao" style="--cor:#0891b2">
-            <div class="emoji-g">🧂</div>
-            <h3>Água com sal</h3>
-            <p><strong>O que é:</strong> água + sal de cozinha.</p>
-            <p><strong>Como ajuda:</strong> o sal se espalha na água em íons (Na⁺ e Cl⁻). Eles carregam eletricidade pelo papel.</p>
-            <p><strong>No cobre:</strong> os elétrons costumam ser recebidos pelo oxigênio que está dissolvido na água.</p>
-            <p><strong>Palpite:</strong> costuma render um pouco menos.</p>
-          </div>
-          <div class="cartao" style="--cor:#c77d00">
-            <div class="emoji-g">🍶</div>
-            <h3>Vinagre</h3>
-            <p><strong>O que é:</strong> água + uma pequena parte de ácido acético.</p>
-            <p><strong>Como ajuda:</strong> por ser um ácido, libera íons H⁺ (hidrogênio) que se movem pelo papel.</p>
-            <p><strong>No cobre:</strong> o H⁺ recebe elétrons com facilidade e pode formar um pouquinho de gás hidrogênio.</p>
-            <p><strong>Palpite:</strong> costuma render mais. Cuidado com os olhos!</p>
-          </div>
-        </div>
+    <section class="pagina" id="p-kahoot" data-titulo="Resumo e Kahoot" data-icone="🏆">
+      <h1>🏆 Missão concluída!</h1>
+      <div class="grade dois">
+        <article class="cartao"><h2>📌 Resumo rápido</h2><ul><li>Átomos contêm partículas.</li><li>Elétrons participam da corrente elétrica.</li><li>Íons podem se mover no eletrólito.</li><li>Volt é a unidade de tensão elétrica.</li><li>As reações químicas podem produzir energia elétrica.</li></ul></article>
+        <article class="cartao central cor-roxo"><div class="emoji">🎮</div><h2>Hora do Kahoot!</h2><p>Prepare-se para responder às perguntas e testar o que aprendeu.</p><a class="botao" id="linkKahoot" href="https://play.kahoot.it/v2/lobby?quizId=25e0e301-9fa1-4276-8348-bbfd35d7f963" target="_blank" rel="noopener noreferrer">Jogar Kahoot ↗</a></article>
+      </div>
+    </section>
 
-        <div class="caixa">
-          🔬 <strong>Teste justo:</strong> use a mesma quantidade de líquido, os mesmos materiais e o mesmo número de células. Mude <strong>só o líquido</strong>! Muitos experimentos usam vinagre com sal juntos, mas aqui vamos testar um de cada vez.
-        </div>
-
-        <div class="cartao">
-          <h3>🗳️ Votação da turma: qual vai render mais volts?</h3>
-          <div class="voto"><button class="botao" data-voto="vinagre" style="--cor:#c77d00">🍶 Vinagre</button><div class="barra-v"><div id="barra-vinagre" style="background:#c77d00"></div></div><strong id="cont-vinagre">0</strong></div>
-          <div class="voto"><button class="botao" data-voto="sal" style="--cor:#0891b2">🧂 Água com sal</button><div class="barra-v"><div id="barra-sal" style="background:#0891b2"></div></div><strong id="cont-sal">0</strong></div>
-          <div class="voto"><button class="botao" data-voto="empate" style="--cor:#7c4dff">🤝 Empate</button><div class="barra-v"><div id="barra-empate" style="background:#7c4dff"></div></div><strong id="cont-empate">0</strong></div>
-        </div>
-
-        <div class="cartao" style="margin-top:18px">
-          <h3>📋 Tabela do nosso experimento</h3>
-          <p>Depois de medir com o multímetro, digite os volts aqui (exemplo: 0,7).</p>
-          <table class="tabela" id="tabela">
-            <thead><tr><th>Células empilhadas</th><th>🍶 Vinagre (V)</th><th>🧂 Água com sal (V)</th></tr></thead>
-            <tbody>
-              <tr><td>1</td><td><input inputmode="decimal" placeholder="0,0"></td><td><input inputmode="decimal" placeholder="0,0"></td></tr>
-              <tr><td>2</td><td><input inputmode="decimal" placeholder="0,0"></td><td><input inputmode="decimal" placeholder="0,0"></td></tr>
-              <tr><td>3</td><td><input inputmode="decimal" placeholder="0,0"></td><td><input inputmode="decimal" placeholder="0,0"></td></tr>
-              <tr><td>4</td><td><input inputmode="decimal" placeholder="0,0"></td><td><input inputmode="decimal" placeholder="0,0"></td></tr>
-            </tbody>
-          </table>
-          <button class="botao" id="comparar">📊 Comparar</button>
-          <p id="resultado-comparar" class="destaque-txt"></p>
-        </div>
-      </section>
-
-      <!-- MONTAGEM -->
-      <section class="pagina" id="p-montagem" data-titulo="Monte a pilha" data-icone="🧩" style="--cor:#2f9e44">
-        <div class="cab"><span class="num"></span><h1>Monte a pilha!</h1></div>
-        <p class="grande">Escolha o líquido e clique nos materiais na ordem certa: <strong class="destaque">zinco → papel molhado → cobre</strong>.</p>
-
-        <div class="chips">
-          <button class="chip-liq ativo" data-liq="vinagre">🍶 Vinagre</button>
-          <button class="chip-liq" data-liq="sal">🧂 Água com sal</button>
-        </div>
-
-        <div class="grade dois">
-          <div class="materiais-btns">
-            <button class="material zinco" data-tipo="zinco">🔘 Arruela de zinco</button>
-            <button class="material papel" data-tipo="papel">📄 Papel molhado</button>
-            <button class="material cobre" data-tipo="cobre">🪙 Moeda de cobre</button>
-            <button class="botao sec" id="limpar-montagem">↻ Recomeçar</button>
-          </div>
-
-          <div class="cartao centro">
-            <div class="area-pilha" id="montagem-pilha"></div>
-            <p id="msg-montagem" class="mensagem">Comece pelo zinco!</p>
-          </div>
-        </div>
-
-        <button class="botao gde" data-ir-id="p-experimento">🧪 Ir para o experimento de verdade →</button>
-      </section>
-
-      <!-- EXPERIMENTO -->
-      <section class="pagina" id="p-experimento" data-titulo="Experimento" data-icone="🧪" style="--cor:#5c940d">
-        <div class="cab"><span class="num"></span><h1>O experimento</h1></div>
-        <p class="grande">Chegou a hora de fazer ciência de verdade! Vamos montar a pilha duas vezes: uma com <strong>vinagre</strong> e outra com <strong>água com sal</strong>.</p>
-
-        <div class="grade dois">
-          <div class="cartao">
-            <h3>❓ Nossa pergunta</h3>
-            <p>Qual líquido faz a pilha de moedas render mais volts: <strong>vinagre</strong> ou <strong>água com sal</strong>?</p>
-          </div>
-          <div class="cartao">
-            <h3>💭 Nossa hipótese</h3>
-            <p>Hipótese é o palpite do cientista, feito <strong>antes</strong> de testar. O que você acha?</p>
-            <textarea id="hipotese" rows="3" placeholder="Acho que ... vai render mais volts porque ..."></textarea>
-          </div>
-        </div>
-
-        <h2>🧰 O que vamos usar</h2>
-        <div class="cartao">
-          <ul class="lista-usar">
-            <li>🪙 5 a 8 moedas de 5 centavos (cobre)</li>
-            <li>🔘 5 a 8 arruelas galvanizadas (zinco)</li>
-            <li>📄 Papelão cortado em discos (um para cada célula, de cada líquido)</li>
-            <li>🍶 Vinagre (meio copo) em um potinho</li>
-            <li>🧂 Água com sal em outro potinho (1 colher de sopa de sal em meio copo de água)</li>
-            <li>💡 1 LED</li>
-            <li>📏 Multímetro, se a escola tiver</li>
-            <li>🧻 Papel toalha para secar</li>
-            <li>✏️ Caderno e lápis para anotar</li>
-            <li>🏷️ Etiquetas ou fita para marcar os potinhos</li>
-          </ul>
-          <p class="mini">As quantidades são sugestões. Combine com o professor antes de fazer.</p>
-        </div>
-
-        <h2>👣 Passo a passo</h2>
-        <p>Clique em “Feito!” depois de cada passo. Abra o “Por quê?” para entender a ciência por trás.</p>
-
-        <div class="prog-exp"><div id="barra-exp"></div></div>
-        <div class="caixa" id="msg-exp">Passos feitos: 0 de 9.</div>
-
-        <ol class="exp-lista">
-
-          <li class="exp-passo">
-            <div class="exp-corpo">
-              <h3>Preparar os líquidos</h3>
-              <p>Em um potinho, coloque o vinagre. No outro, misture a água com o sal e mexa até o sal sumir. <strong>Etiquete os dois!</strong></p>
-              <details class="porque"><summary>Por quê?</summary><p>Os dois líquidos têm íons, as partículas que carregam eletricidade por dentro da pilha. Se os potinhos ficarem misturados, o teste perde o sentido.</p></details>
-            </div>
-            <button class="botao sec exp-feito">Feito!</button>
-          </li>
-
-          <li class="exp-passo">
-            <div class="exp-corpo">
-              <h3>Cortar os discos de papelão</h3>
-              <p>Corte discos um pouco <strong>menores</strong> que a moeda. Faça dois montinhos separados: um para o vinagre e outro para a água com sal.</p>
-              <details class="porque"><summary>Por quê?</summary><p>Se o papel sair para fora da moeda, o líquido encosta em duas peças ao mesmo tempo e faz um atalho (curto-circuito). Aí a pilha para de funcionar.</p></details>
-            </div>
-            <button class="botao sec exp-feito">Feito!</button>
-          </li>
-
-          <li class="exp-passo">
-            <div class="exp-corpo">
-              <h3>Molhar os discos</h3>
-              <p>Molhe um montinho de discos no vinagre e o outro na água com sal.</p>
-              <details class="porque"><summary>Por quê?</summary><p>O papel molhado é uma ponte: os íons passam por ele de um metal para o outro, por dentro da pilha.</p></details>
-            </div>
-            <button class="botao sec exp-feito">Feito!</button>
-          </li>
-
-          <li class="exp-passo">
-            <div class="exp-corpo">
-              <h3>Tirar o excesso de líquido</h3>
-              <p>Aperte cada disco no papel toalha. Ele tem que ficar <strong>úmido, mas sem pingar</strong>.</p>
-              <details class="porque"><summary>Por quê?</summary><p>Se pingar, o líquido escorre pela lateral e liga as moedas por fora. A eletricidade pega o atalho e o LED não acende.</p></details>
-            </div>
-            <button class="botao sec exp-feito">Feito!</button>
-          </li>
-
-          <li class="exp-passo">
-            <div class="exp-corpo">
-              <h3>Empilhar a pilha de vinagre</h3>
-              <p>Comece com uma arruela (zinco), coloque um disco com vinagre e feche com uma moeda (cobre). Isso é <strong>1 célula</strong>. Repita a sequência para fazer 4 ou 5 células.</p>
-              <details class="porque"><summary>Por quê?</summary><p>O zinco perde elétrons e o cobre recebe. Cada célula empurra um pouquinho, e as células empilhadas somam seus volts, como degraus de uma escada.</p></details>
-            </div>
-            <button class="botao sec exp-feito">Feito!</button>
-          </li>
-
-          <li class="exp-passo">
-            <div class="exp-corpo">
-              <h3>Medir os volts</h3>
-              <p>Com o multímetro, encoste a ponta <strong>vermelha</strong> na moeda de cobre do topo e a <strong>preta</strong> na arruela de zinco da base. Meça com 1, 2, 3 e 4 células e <strong>anote</strong>.</p>
-              <details class="porque"><summary>Por quê?</summary><p>O multímetro mostra o tamanho do “empurrão” nos elétrons, em volts. Medir com números diferentes de células mostra que mais células dão mais volts.</p></details>
-            </div>
-            <button class="botao sec exp-feito">Feito!</button>
-          </li>
-
-          <li class="exp-passo">
-            <div class="exp-corpo">
-              <h3>Tentar acender o LED</h3>
-              <p>Encoste a perna <strong>comprida (+)</strong> do LED na moeda do topo e a perna <strong>curta (−)</strong> na arruela da base. Segure firme!</p>
-              <details class="porque"><summary>Por quê?</summary><p>O LED só funciona em um sentido. Ao encostar nos dois lados da pilha, você fecha o circuito: os elétrons correm pelo LED e ele acende.</p></details>
-            </div>
-            <button class="botao sec exp-feito">Feito!</button>
-          </li>
-
-          <li class="exp-passo">
-            <div class="exp-corpo">
-              <h3>Repetir com água com sal</h3>
-              <p>Desmonte e seque as moedas e arruelas. Monte outra pilha igual, mas com os discos da <strong>água com sal</strong>. Meça e tente acender o LED de novo.</p>
-              <details class="porque"><summary>Por quê?</summary><p>Esse é o teste justo: muda só o líquido. Todo o resto fica igual, então a diferença vem do líquido.</p></details>
-            </div>
-            <button class="botao sec exp-feito">Feito!</button>
-          </li>
-
-          <li class="exp-passo">
-            <div class="exp-corpo">
-              <h3>Anotar e arrumar tudo</h3>
-              <p>Digite os volts na tabela da página <strong>“Vinagre × água com sal”</strong>. Jogue os papéis no lixo, guarde os materiais e <strong>lave as mãos</strong>.</p>
-              <details class="porque"><summary>Por quê?</summary><p>Cientistas sempre registram o que medem. É com os números que a gente tira conclusões.</p></details>
-              <button class="botao sec" data-ir-id="p-liquidos">📋 Ir para a tabela</button>
-            </div>
-            <button class="botao sec exp-feito">Feito!</button>
-          </li>
-
+    <section class="pagina" id="p-creditos" data-titulo="Equipe e referências" data-icone="👩‍🎓">
+      <h1>👩‍🎓 Equipe e referências</h1>
+      <div class="grade dois">
+        <article class="cartao cor-laranja"><h2>🖥️ Quem fez o site</h2><p class="grande">Emanuelle e Ana Luiza</p></article>
+        <article class="cartao cor-verde"><h2>👩‍🔬 Integrantes</h2><p>Emanuelle, Matheus, Ana Luiza, Gabriela, Maria Coneglian e Anne.</p><p><strong>Turma:</strong> 2º ano B<br><strong>Professora:</strong> Cida Borges</p></article>
+      </div>
+      <div class="cartao">
+        <h2>📚 Referências</h2>
+        <ol class="refs">
+          <li>ENCYCLOPAEDIA BRITANNICA. <strong>Alessandro Volta</strong>. Disponível em: <a href="https://www.britannica.com/biography/Alessandro-Volta" target="_blank" rel="noopener noreferrer">britannica.com</a>. Acesso em: 22 out. 2026.</li>
+          <li>KHAN ACADEMY. <strong>Baterias e células eletroquímicas</strong>. Disponível em: <a href="https://www.khanacademy.org/" target="_blank" rel="noopener noreferrer">khanacademy.org</a>. Acesso em: 22 out. 2026.</li>
+          <li>OPENSTAX. <strong>Chemistry 2e: Electrochemistry</strong>. Disponível em: <a href="https://openstax.org/details/books/chemistry-2e" target="_blank" rel="noopener noreferrer">openstax.org</a>. Acesso em: 22 out. 2026.</li>
         </ol>
-
-        <div class="caixa" style="--cor:#e5484d">
-          <h3>🤔 E se o LED não acender?</h3>
-          <ul>
-            <li>O papel está pingando? Seque mais.</li>
-            <li>O LED está ao contrário? Vire as pernas.</li>
-            <li>Tem poucas células? Junte mais.</li>
-            <li>A arruela é mesmo galvanizada? Sem zinco, a pilha não funciona direito.</li>
-            <li>Os contatos estão firmes? Aperte as peças com os dedos secos.</li>
-          </ul>
-          <p>Se o multímetro marcou volts, mas o LED não acendeu, tudo bem! Isso também é um resultado. Alguns LEDs precisam de mais volts que outros, e os cientistas repetem os testes.</p>
-        </div>
-      </section>
-
-      <!-- CIRCUITO -->
-      <section class="pagina" id="p-circuito" data-titulo="Caminho dos elétrons" data-icone="🔌" style="--cor:#d6336c">
-        <div class="cab"><span class="num"></span><h1>O caminho dos elétrons</h1></div>
-        <p class="grande">Vamos ver, passo a passo, como a pilha faz a luz acender. Use os botões abaixo da imagem.</p>
-
-        <div class="cartao">
-          <div class="cena-wrap" id="cena-wrap">
-            <div class="cena" id="cena" data-passo="0">
-
-              <div class="copo"><div class="liquido"></div></div>
-              <div class="placa zn">Zinco</div>
-              <div class="placa cu">Cobre</div>
-
-              <div class="fio-u"></div>
-              <div class="corte"></div>
-              <div class="estado"><span class="aberto">🚧 circuito ABERTO</span><span class="fechado-txt">✅ circuito FECHADO</span></div>
-              <div class="lampada">💡</div>
-
-              <div class="rotulo r-zn">perde elétrons<br>(oxida)</div>
-              <div class="rotulo r-cu">recebe elétrons<br>(reduz)</div>
-
-              <div class="grupo g-zn">
-                <i class="e" style="left:130px;top:150px">e⁻</i>
-                <i class="e" style="left:222px;top:135px">e⁻</i>
-                <i class="e" style="left:128px;top:105px">e⁻</i>
-              </div>
-
-              <div class="grupo g-fila">
-                <i class="e" style="left:175px;top:92px">e⁻</i>
-                <i class="e" style="left:175px;top:68px">e⁻</i>
-                <i class="e" style="left:192px;top:49px">e⁻</i>
-                <i class="e" style="left:212px;top:49px">e⁻</i>
-              </div>
-
-              <div class="grupo g-corre">
-                <i class="e">e⁻</i><i class="e">e⁻</i><i class="e">e⁻</i><i class="e">e⁻</i><i class="e">e⁻</i>
-              </div>
-
-              <div class="grupo g-ions">
-                <i class="ion pos" style="top:225px">+</i>
-                <i class="ion pos" style="top:275px;animation-delay:-1s">+</i>
-                <i class="ion neg" style="top:250px;animation-delay:-.5s">−</i>
-                <i class="ion neg" style="top:300px;animation-delay:-1.5s">−</i>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="legenda" id="legenda">
-          <h3 id="leg-titulo"></h3>
-          <p id="leg-texto"></p>
-        </div>
-
-        <div class="passos-ctrl">
-          <button class="botao sec" id="passo-ant">◀ Passo anterior</button>
-          <div class="pontos" id="pontos"></div>
-          <button class="botao" id="passo-prox">Próximo passo ▶</button>
-        </div>
-
-        <div class="caixa">
-          <h3>🧠 Resumo em 3 frases</h3>
-          <ol>
-            <li>O zinco solta elétrons.</li>
-            <li>Com o circuito fechado, os elétrons correm pelo fio até o cobre e acendem a luz.</li>
-            <li>Dentro do copo, os íons também se movem e fecham o caminho por dentro.</li>
-          </ol>
-        </div>
-
-        <details class="curiosos">
-          <summary>🔎 Para os curiosos: as fórmulas</summary>
-          <p><strong>No zinco (oxidação):</strong> Zn → Zn²⁺ + 2e⁻</p>
-          <p><strong>No cobre, com vinagre (redução):</strong> 2H⁺ + 2e⁻ → H₂</p>
-          <p><strong>No cobre, com água e sal (redução):</strong> O₂ + 2H₂O + 4e⁻ → 4OH⁻</p>
-          <p class="mini">As reações exatas podem variar com os materiais e com o líquido usado.</p>
-        </details>
-      </section>
-
-      <!-- VOLTÍMETRO -->
-      <section class="pagina" id="p-voltimetro" data-titulo="Voltímetro e LED" data-icone="💡" style="--cor:#c77d00">
-        <div class="cab"><span class="num"></span><h1>Voltímetro e LED</h1></div>
-        <p class="grande">O <strong>voltímetro</strong> (ou multímetro) é o aparelho que mede os volts. Adicione células e veja a tensão subir!</p>
-
-        <div class="grade dois">
-          <div class="cartao centro">
-            <div class="area-pilha" id="lab-pilha"></div>
-            <div class="controles">
-              <button class="botao" id="mais">＋ Célula</button>
-              <button class="botao sec" id="menos">− Célula</button>
-            </div>
-          </div>
-
-          <div class="cartao centro">
-            <h3>Voltímetro</h3>
-            <div class="display" id="voltagem">0,8 V</div>
-            <div class="led" id="led"></div>
-            <p id="msg-lab" class="mensagem">1 célula: ainda é pouco para o LED.</p>
-          </div>
-        </div>
-
-        <div class="caixa">
-          ➕ Cada célula soma mais volts, como subir degraus de uma escada. Quando a soma é suficiente, o LED acende.
-          <br><span class="mini">Os valores são de exemplo, só para a simulação. Na vida real, o resultado muda com os materiais, o líquido e a montagem. Pode ser preciso juntar mais células.</span>
-        </div>
-      </section>
-
-      <!-- DIA A DIA -->
-      <section class="pagina" id="p-dia" data-titulo="No dia a dia" data-icone="🏘️" style="--cor:#3b5bdb">
-        <div class="cab"><span class="num"></span><h1>Volts no dia a dia</h1></div>
-        <p class="grande">Clique em cada item para comparar a força do empurrão (volts) das coisas que a gente conhece.</p>
-
-        <div id="escada" class="escada"></div>
-        <div class="caixa" id="detalhe-volts">Clique em um item da lista!</div>
-
-        <div class="cartao" style="--cor:#2f9e44">
-          <h3>♻️ Pilhas e baterias usadas</h3>
-          <p>Elas têm metais que fazem mal à natureza. <strong>Não vão no lixo comum!</strong></p>
-          <ol>
-            <li>Guarde as pilhas usadas em um potinho, longe de crianças pequenas.</li>
-            <li>Leve a um ponto de coleta (muitos mercados e lojas de eletrônicos têm).</li>
-            <li>Nunca jogue no fogo, na água ou no lixo comum.</li>
-          </ol>
-        </div>
-      </section>
-
-      <!-- CONCLUSÃO -->
-      <section class="pagina" id="p-conclusao" data-titulo="Conclusão" data-icone="🏁" style="--cor:#e67700">
-        <div class="cab"><span class="num"></span><h1>Nossa conclusão</h1></div>
-        <p class="grande">Terminamos o experimento! Agora vamos juntar tudo o que descobrimos.</p>
-
-        <div class="grade dois">
-          <div class="cartao">
-            <h3>❓ Pergunta</h3>
-            <p>Qual líquido faz a pilha de moedas render mais volts: vinagre ou água com sal?</p>
-          </div>
-          <div class="cartao">
-            <h3>💭 Nossa hipótese era...</h3>
-            <p id="hipotese-final" class="destaque-txt">(clique no botão abaixo para trazer o palpite)</p>
-          </div>
-        </div>
-
-        <div class="cartao">
-          <h3>📊 O que aconteceu no nosso experimento</h3>
-          <button class="botao" id="preencher-conclusao">✨ Preencher com os dados da nossa tabela</button>
-          <textarea id="obs-final" rows="5" placeholder="Escreva aqui o que a turma viu: quantos volts mediu, se o LED acendeu, qual líquido rendeu mais..."></textarea>
-        </div>
-
-        <div class="cartao">
-          <h3>🔬 Por que isso acontece?</h3>
-          <ol class="resumo">
-            <li>O <strong>zinco</strong> perde elétrons (oxida).</li>
-            <li>Com o circuito <strong>fechado</strong>, os elétrons correm pelo fio até o <strong>cobre</strong>. Essa corrida é a corrente elétrica.</li>
-            <li>No cobre, os elétrons são recebidos (redução).</li>
-            <li>No líquido, os <strong>íons</strong> se movem e fecham o caminho por dentro da pilha.</li>
-            <li>A energia vem de uma reação química. A <strong>energia química</strong> vira <strong>energia elétrica</strong>.</li>
-            <li>Cada célula soma <strong>volts</strong>. Por isso empilhamos várias.</li>
-          </ol>
-        </div>
-
-        <div class="caixa">
-          <h3>🧂🍶 Sobre os líquidos</h3>
-          <p>O vinagre tem íons H⁺, que recebem elétrons com facilidade no cobre. A água com sal tem íons de sal, que também carregam eletricidade. O resultado pode mudar com a quantidade de líquido, o aperto das peças e o tipo de moeda. Por isso cientistas <strong>repetem os testes</strong> antes de concluir.</p>
-        </div>
-
-        <div class="grade dois">
-          <div class="cartao" style="--cor:#2f9e44">
-            <h3>🌟 O que aprendemos</h3>
-            <ul>
-              <li>Moedas, papel e líquido podem gerar eletricidade.</li>
-              <li>Volt mede o empurrão nos elétrons e homenageia Volta.</li>
-              <li>O circuito precisa estar fechado.</li>
-              <li>Pilhas usadas vão em ponto de coleta.</li>
-            </ul>
-          </div>
-          <div class="cartao" style="--cor:#7c4dff">
-            <h3>💡 Para pensar</h3>
-            <ul>
-              <li>O que aconteceria se usássemos só um metal?</li>
-              <li>Por que o LED não acende com 1 célula?</li>
-              <li>Que outro líquido da cozinha poderia funcionar?</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="caixa pronto">🎉 Obrigado por acompanhar! Agora é hora de testar o que você aprendeu no Kahoot.</div>
-        <button class="botao gde" data-ir-id="p-kahoot">🎮 Ir para o Kahoot →</button>
-      </section>
-
-      <!-- KAHOOT -->
-      <section class="pagina" id="p-kahoot" data-titulo="Resumo e Kahoot" data-icone="🏆" style="--cor:#9c36b5">
-        <div class="cab"><span class="num"></span><h1>Missão concluída!</h1></div>
-
-        <div class="grade dois">
-          <div class="cartao">
-            <h3>📌 O que aprendemos</h3>
-            <ul class="resumo">
-              <li>A pilha transforma energia química em elétrica.</li>
-              <li>O zinco perde elétrons (oxida).</li>
-              <li>O cobre recebe elétrons (reduz).</li>
-              <li>O líquido (eletrólito) deixa os íons se moverem.</li>
-              <li>Volt mede o empurrão nos elétrons e homenageia Volta.</li>
-              <li>Várias células em série somam os volts.</li>
-            </ul>
-          </div>
-          <div class="cartao centro kahoot-bloco">
-            <div class="emoji-g">🎮</div>
-            <h2>Hora do Kahoot!</h2>
-            <p>Vamos testar o que você aprendeu. Se preferir, entre em <strong>kahoot.it</strong> e digite o PIN que aparecer na tela.</p>
-            <a id="linkKahoot" class="botao gde" href="https://kahoot.it/?pin=178372&refer_method=link" target="_blank" rel="noopener noreferrer">🎮 Jogar Kahoot</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- CRÉDITOS -->
-      <section class="pagina" id="p-creditos" data-titulo="Equipe e fontes" data-icone="👩‍🎓" style="--cor:#495057">
-        <div class="cab"><span class="num"></span><h1>Equipe e referências</h1></div>
-
-        <div class="grade dois">
-          <div class="cartao" style="--cor:#e5484d">
-            <h3>🖥️ Site criado por</h3>
-            <p class="grande" id="criadoras"></p>
-          </div>
-          <div class="cartao" style="--cor:#2f9e44">
-            <h3>👩‍🔬 Equipe do projeto</h3>
-            <p class="grande" id="equipe-final"></p>
-            <p class="mini" id="info-turma"></p>
-          </div>
-        </div>
-
-        <div class="cartao">
-          <h3>🔗 Referências</h3>
-          <ol class="refs" id="refs"></ol>
-        </div>
-      </section>
-
-    </main>
+      </div>
+    </section>
 
     <footer class="rodape">
-      <button class="botao sec" id="anterior">← Anterior</button>
-      <span class="nome-pagina" id="nome-pagina"></span>
+      <button class="botao secundario" id="anterior">← Anterior</button>
+      <span id="nome-pagina">Início</span>
       <button class="botao" id="proximo">Próxima →</button>
     </footer>
-
-  </div>
-
-  <!-- MENU LATERAL DIREITO (fixo) -->
-  <nav class="menu" aria-label="Menu da apresentação">
-    <div class="menu-titulo">📚 MENU</div>
-    <div class="menu-lista" id="menu-lista"></div>
-    <div class="menu-rodape">Site criado por<br><strong id="menu-creditos"></strong></div>
-  </nav>
-
+  </main>
 </div>
-
 <script src="script.js"></script>
 </body>
 </html>
